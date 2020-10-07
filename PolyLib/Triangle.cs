@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace PolyLib
+{
+    public class Triangle : AbstractPolygon
+    {
+        public Triangle(int length) :
+           base(3, length)
+        { }
+        public override double GetArea()
+        {
+            return SideLength * SideLength * Math.Sqrt(3)/4;
+        }
+    }
+}
